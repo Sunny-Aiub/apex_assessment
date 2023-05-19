@@ -1,5 +1,5 @@
 class AppRoutes{
 
-  static const splashScreen = '/splashScreen';
+  static const home = '/home';
 
 }
