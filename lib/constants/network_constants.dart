@@ -1,0 +1,1 @@
+const timeOutDuration = 30;

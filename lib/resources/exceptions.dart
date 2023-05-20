@@ -1,3 +1,5 @@
+import '../constants/string_constants.dart';
+
 class AppExceptions implements Exception {
   final _message;
   final _prefix;
@@ -10,7 +12,7 @@ class AppExceptions implements Exception {
 }
 
 class InternetException extends AppExceptions {
-  InternetException([String? message]) : super(message!, 'No Internet!');
+  InternetException([String? message]) : super(message!, NO_INTERNET);
 }
 
 class RequestTimeoutException extends AppExceptions {
@@ -31,6 +33,11 @@ class InvalidDataException extends AppExceptions {
 class UnauthorisedException extends AppExceptions {
   UnauthorisedException([String? message])
       : super(message!, 'You do not have permission for this!');
+}
+
+class PageNotFoundException extends AppExceptions {
+  PageNotFoundException([String? message])
+      : super(message!, 'Page Not Found!');
 }
 
 class FetchDataException extends AppExceptions {

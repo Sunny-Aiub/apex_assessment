@@ -12,7 +12,7 @@ class MyTheme extends GetxController {
 
   MyTheme._internal();
 
-  final _isDark = true.obs;
+  final _isDark = false.obs;
   get themeValue => _isDark;
 
 
